@@ -1,0 +1,13 @@
+﻿@{
+    ViewData["Title"] = "Index";
+}
+@using (Html.BeginForm("Result", "Hello", FormMethod.Post))
+{
+    <table>
+        <tr>
+            <td>Your name: </td>
+            <td>@Html.TextBox("Name")</td>
+            <td><button type ="submit">Enter</button></td>
+        </tr>
+    </table>
+}
